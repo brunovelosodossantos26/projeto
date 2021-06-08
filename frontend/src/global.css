@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-size: 400 14px Poppin, sans-serif;
+    height: 100%;
+    background: #f1f5f7;
+}
+
+#root{
+    min-height: 100%;
+}
+
+input, button, textarea{
+    font-size: 700 14px Poppin, sans-serif;
+}
+
+button{
+    cursor: pointer;
+}

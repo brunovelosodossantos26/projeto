@@ -1,0 +1,12 @@
+.checkbox{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #8b6bea;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.checkbox.checked{
+    background-color: #ffd74f;
+}

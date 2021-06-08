@@ -1,0 +1,261 @@
+header{
+    position: relative;
+    width: 100%;
+    height: 64px;
+    background: #7A57FD;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 8fr;
+    padding: 0 100px 0 10px;
+}
+
+header div{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+header .position{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(4,1fr);
+    padding: 10px;
+}
+
+header .position div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .position div div{
+    width: 4px;
+    height: 4px;
+    background: #9871F5;
+    border-radius: 50%;
+}
+
+header .logo-new-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: -0.02em; 
+    list-style: none;
+}
+
+header .search-img{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+header .change{
+    width: calc(100px + 10%);
+    height: 34px;
+    background: #5f41cf;
+    border-radius: 4px;
+    border: none;
+    color: #FFFFFF;
+    margin-right: 20px;
+}
+
+input::placeholder{
+    width: 148px;
+    height: 15px;
+   text-transform: uppercase;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    color: #FFFFFF;
+    text-align: center;
+    }
+
+
+
+/*section */
+
+section{
+    width: 100%;
+    min-height: calc(100% - 64px);
+}
+
+section .top{
+    width: 100%;
+    height: 235px;
+    padding: 20px 80px;
+}
+
+section .top .hello{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 4fr 4fr;
+}
+
+section .top .desenho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+section .top .desenho .form6{
+    position: absolute;
+    width: 126px;
+    height: 126px;
+    left: -18.5%;
+    top: 25%;
+    background: linear-gradient(180deg, #FFC700 0%, rgba(255, 199, 0, 0.6) 100%);
+    transform: rotate(-180deg);
+    border-radius: 50% 50% 0 50%;
+}
+
+section .top .desenho .form7{
+    position: absolute;
+    width: 63px;
+    height: 63px;
+    left: -11.25%;
+    top: 13.5%;
+    background: #FFB800;
+    transform: rotate(-180deg);
+    border-radius: 50% 50% 0 50%;
+}
+
+section .top .paragraph{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+section .top .paragraph h1{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 160%;
+    color: #200E64;
+   
+}
+
+section .top .paragraph .student{
+    font-weight: 700;
+}
+
+
+section .top .paragraph p{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 160%;
+    color: #343434;
+}
+
+section .top .elementos2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+section .top .elementos2 .imgBase{
+    margin-left: 20px;
+    z-index: 10;
+    width: 209px;
+    height: 173px;
+}
+
+section .top .elementos2 .form9{
+    position: absolute;
+    width: 9.6px;
+    height: 9.6px;
+    background: #FFD74F;
+    transform: rotate(-180deg);
+    border-radius: 6px;
+    z-index: 2;
+}
+
+section .top .elementos2 .form8{
+    position: absolute;
+    width: 166px;
+    height: 332px;
+    background: linear-gradient(180deg, rgba(155, 155, 155, 0.15) 0%, #EEF2F4 0.01%, #FFFFFF 100%);
+    transform: rotate(-90deg);
+    border-radius: 0px 650px 0px 650px;
+    z-index: 5;
+}
+
+/**/
+@media (max-width: 768px){
+    section .top .elementos2{
+        display: none;
+    }
+
+}
+
+@media (max-width: 600px){
+    header .position{
+        display: none;
+    }
+    header .items{
+        display: none;
+    }
+
+    header .search-img .ImgTop {
+        margin-left: 120px;
+    }
+    section .top .elementos2{
+        display: none;
+    }
+
+    section .top .hello {
+    width: 88vw;
+    Height: 250px;
+    margin-left: -55px;
+    }
+
+    section .top .paragraph h1{
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 26px;
+        line-height: 160%;
+        color: #200E64;
+       display: flex;
+       margin-top: -30px;
+    }
+
+    section .top .desenho .form6{
+        width: 64px;
+        height: 64px;
+        top: 8px;
+       left: 220px;
+    }
+
+    section .top .desenho .form7{
+        width: 32px;
+        height: 32px;
+        left: 230px;
+        top: -8px;
+    }
+   
+}
+
+@media (min-width: 400px){
+
+}
